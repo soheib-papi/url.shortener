@@ -1,4 +1,4 @@
-namespace Sabt.Service.Contracts.OptionsConfiguration;
+namespace url.shortener.OptionModels;
 
 public class UrlExpireTimeInDayOptions
 {

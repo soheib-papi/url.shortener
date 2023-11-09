@@ -1,14 +1,7 @@
+using url.shortener.HostingExtensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-
-app.UseHttpsRedirection();
-
-
+var app = builder.ServicesConfigure()?.PipelineConfigure();
 
 app.Run();
-

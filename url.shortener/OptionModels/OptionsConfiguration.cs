@@ -1,6 +1,4 @@
-using Sabt.Service.Contracts.OptionsConfiguration;
-
-namespace Sabt.Service.Api.Configuration;
+namespace url.shortener.OptionModels;
 
 public static class OptionsConfiguration
 {

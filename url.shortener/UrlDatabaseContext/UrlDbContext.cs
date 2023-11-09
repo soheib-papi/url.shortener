@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Reflection;
-using Url.Shorter.Entities;
+using url.shortener.Entities;
 
-namespace Url.Shorter.UrlDatabaseContext;
+namespace url.shortener.UrlDatabaseContext;
 
 public class UrlDbContext : DbContext
 {

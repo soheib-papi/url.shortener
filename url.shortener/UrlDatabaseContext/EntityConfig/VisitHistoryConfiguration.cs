@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Url.Shorter.Entities;
+using url.shortener.Entities;
 
-namespace Url.Shorter.UrlDatabaseContext.EntityConfig;
+namespace url.shortener.UrlDatabaseContext.EntityConfig;
 
 public class VisitHistoryConfiguration : IEntityTypeConfiguration<VisitHistory>
 {
