@@ -8,9 +8,6 @@ public class VisitHistoryConfiguration : IEntityTypeConfiguration<VisitHistory>
 {
     public void Configure(EntityTypeBuilder<VisitHistory> builder)
     {
-        //builder.HasOne<UrlItem>()
-        //    .WithOne(p => p.VisitHistory)
-        //    .HasForeignKey<VisitHistory>(p => p.UrlItemId)
-        //    .OnDelete(DeleteBehavior.Cascade);
+
     }
 }

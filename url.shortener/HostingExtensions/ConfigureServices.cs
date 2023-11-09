@@ -10,14 +10,14 @@ public static class ConfigureServices
 {
     public static WebApplication? ServicesConfigure(this WebApplicationBuilder builder)
     {
-        //if(builder.Environment.IsDevelopment())
-        //{
-        //    builder.Services.AddDbContext<UrlDbContext>(opt => opt.UseInMemoryDatabase("UrlDatabase"));
-        //}
+        if (builder.Environment.IsDevelopment())
+        {
+            builder.Services.AddDbContext<UrlDbContext>(opt => opt.UseInMemoryDatabase("UrlDatabase"));
+        }
         //else
         //{
-        builder.Services.AddDbContext<UrlDbContext>(opt =>
-            opt.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:SqlServer").Value));
+        //    builder.Services.AddDbContext<UrlDbContext>(opt =>
+        //        opt.UseSqlServer(builder.Configuration.GetSection("ConnectionStrings:SqlServer").Value));
         //}
 
         builder.Services.ConfigureAppOptions(builder);
