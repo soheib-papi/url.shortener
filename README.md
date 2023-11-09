@@ -15,7 +15,7 @@ https://localhost:7086/urlitems/visits/{id}
 This endpoint takes an ID and returns the number of visits to this address. The calling method is GET.
 
 https://localhost:7086/urlitems/summary
-This endpoint displays all links that have not expired, along with the number of visits.
+This endpoint displays all links that have not expired, along with the number of visits. The calling method is GET.
 
 You can use the http file available in the project to test the endpoints.
 
