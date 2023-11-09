@@ -1,9 +1,9 @@
 # url.shortener
 
-##Description:
+## Description:
 A program that takes internet addresses and returns their shortened versions.
 
-##This program consists of four Minimal APIs:
+## This program consists of four Minimal APIs:
 
 https://localhost:7086/urlitems/?url=https://www.soheib111.ir/
 This endpoint receives a URL as a query string and returns its shortened version. The calling method is POST.
@@ -19,7 +19,7 @@ This endpoint displays all links that have not expired, along with the number of
 
 You can use the http file available in the project to test the endpoints.
 
-##Features:
+## Features:
 ## Microsoft Entity Framework Core
 ## Minimal API
 ## Global Exception Handling
