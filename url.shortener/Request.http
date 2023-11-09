@@ -1,0 +1,18 @@
+
+POST https://localhost:7086/urlitems/?url=https://www.soheib111.ir/ HTTP/1.1
+content-type: application/json
+
+###
+
+GET https://localhost:7086/urlitems/1 HTTP/1.1
+content-type: application/json
+
+###
+
+GET https://localhost:7086/urlitems/visits/1 HTTP/1.1
+content-type: application/json
+
+###
+
+GET https://localhost:7086/urlitems/summary HTTP/1.1
+content-type: application/json
