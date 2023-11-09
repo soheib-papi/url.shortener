@@ -1,4 +1,4 @@
-# url.shortener
+# URL Shortener
 
 ## Description:
 A program that takes internet addresses and returns their shortened versions.
