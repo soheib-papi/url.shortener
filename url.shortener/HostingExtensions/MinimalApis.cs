@@ -114,7 +114,7 @@ public static class MinimalApis
 
     private static async Task<List<VisitHistoryReponseModel>?> GetAllSummary(UrlDbContext db, CancellationToken cancellationToken)
     {
-        return await db.UrlItems
+        var result = await db.UrlItems
             .Include(i => i.VisitHistory)
             .Where(f => f.Created.AddDays(f.ExpireTimeInDay) >= DateTime.UtcNow)
             .Select(f => new VisitHistoryReponseModel()
@@ -126,6 +126,8 @@ public static class MinimalApis
                 IsExpired = !(f.Created.AddDays(f.ExpireTimeInDay) >= DateTime.UtcNow)
             })
             .ToListAsync(cancellationToken);
+
+        return result;
     }
 
 }

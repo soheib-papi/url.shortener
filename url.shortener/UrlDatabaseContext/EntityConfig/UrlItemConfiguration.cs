@@ -10,7 +10,7 @@ public class UrlItemConfiguration : IEntityTypeConfiguration<UrlItem>
     {
         builder.Property(p => p.OriginalUrl).IsRequired().HasMaxLength(1024).IsUnicode(true);
 
-        builder.HasOne<VisitHistory>()
+        builder.HasOne(p => p.VisitHistory)
             .WithOne(p => p.UrlItem)
             .HasForeignKey<VisitHistory>(p => p.UrlItemId)
             .OnDelete(DeleteBehavior.Cascade);
