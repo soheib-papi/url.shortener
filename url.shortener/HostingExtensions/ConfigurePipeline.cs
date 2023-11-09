@@ -12,7 +12,7 @@ public static class ConfigurePipeline
 
         app.UseHttpsRedirection();
 
-        //app.MinimalApisDefinition();
+        app.MinimalApisDefinition();
 
         return app;
     }
