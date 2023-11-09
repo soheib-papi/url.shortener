@@ -1,3 +1,5 @@
+using AspNetCoreRateLimit;
+
 namespace url.shortener.HostingExtensions;
 
 public static class ConfigurePipeline
@@ -10,7 +12,7 @@ public static class ConfigurePipeline
 
         app.UseHttpsRedirection();
 
-        app.MinimalApisDefinition();
+        //app.MinimalApisDefinition();
 
         return app;
     }
